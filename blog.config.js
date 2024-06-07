@@ -4,7 +4,7 @@ const BLOG = {
   email: "analigiaanascimento@gmail.com",
   link: "https://nobelium.vercel.app",
   description: "Fonoaudióloga em Jaraguá do Sul",
-  lang: "pt-BR", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
+  lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   timezone: "America/Fortaleza", // Your Notion posts' date will be interpreted as this timezone. See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for all options.
   appearance: "light", // ['light', 'dark', 'auto'],
   font: "sans-serif", // ['sans-serif', 'serif']
