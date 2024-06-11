@@ -1,6 +1,7 @@
 import FormattedDate from "@/components/FormattedDate";
 import { useConfig } from "@/lib/config";
 import Link from "next/link";
+import DateComponent from "./DateComponent";
 
 const BlogPost = ({ post }) => {
   const BLOG = useConfig();
@@ -13,7 +14,8 @@ const BlogPost = ({ post }) => {
             {post.title}
           </h2>
           <time className="flex-shrink-0 text-gray-600 dark:text-gray-400">
-            <FormattedDate date={post.date} />
+            {/* <FormattedDate date={post.date} /> */}
+            <DateComponent date={post.date} />
           </time>
         </header>
         <main>
