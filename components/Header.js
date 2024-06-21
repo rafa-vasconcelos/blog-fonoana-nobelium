@@ -10,7 +10,7 @@ const NavBar = () => {
   const locale = useLocale();
   const links = [
     { id: 0, name: locale.NAV.INDEX, to: BLOG.path || "/", show: true },
-    { id: 1, name: locale.NAV.ABOUT, to: "/about", show: BLOG.showAbout },
+    { id: 1, name: locale.NAV.ABOUT, to: "/sobre", show: BLOG.showAbout },
     { id: 2, name: locale.NAV.RSS, to: "/feed", show: true, external: true },
     { id: 3, name: locale.NAV.SEARCH, to: "/search", show: true },
   ];
@@ -94,9 +94,10 @@ export default function Header({ navBarTitle, fullWidth }) {
     <>
       <div className="observer-element h-4 md:h-12" ref={sentinelRef}></div>
       <div
-        className={`sticky-nav group m-auto w-full h-6 flex flex-row justify-between items-center mb-2 md:mb-12 py-8 bg-opacity-60 ${
+        className={`sticky-nav group m-auto w-full h-6 flex bg-[#d4e2d4] border rounded-2xl flex-row justify-between items-center mb-2 md:mb-12 py-8 bg-opacity-100 ${
           !fullWidth ? "max-w-3xl px-4" : "px-4 md:px-24"
         }`}
+        style={{ backgroundImage: "url(/clean-gray-paper.webp)" }}
         id="sticky-nav"
         ref={navRef}
         onClick={handleClickHeader}
@@ -141,7 +142,7 @@ const HeaderName = forwardRef(function HeaderName(
   return (
     <p
       ref={ref}
-      className="header-name ml-2 font-medium text-gray-600 dark:text-gray-300 capture-pointer-events grid-rows-1 grid-cols-1 items-center"
+      className="header-name ml-2 font-medium text-gray-800 dark:text-gray-300 capture-pointer-events grid-rows-1 grid-cols-1 items-center"
       onClick={onClick}
     >
       {postTitle && (
